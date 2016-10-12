@@ -1,0 +1,21 @@
+{
+  "name": "form-autosave",
+  "homepage": "https://github.com/alex-parkhamovich/pusht",
+  "authors": [
+    "Alexander <lml.alexander.lml@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sisyphus": "^1.1.103",
+    "angular": "^1.5.8"
+  }
+}

@@ -1,0 +1,78 @@
+<br/><br/>
+<div class="row">
+  <div class="columns large-12">
+    <h4>Auto-Save Form Fields, Woo!</h4>
+    
+    <form id="new_input" class="new_input" action="#" method="put">
+      <div class="row">
+        <div class="columns small-4">
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns small-4">
+          <input type="text" id="place" name="place" placeholder="Place" />
+        </div>
+      </div>
+      <table>
+          <thead>
+          <tr>
+              <th>Description <br/>of Activity</th>
+              <th>Date of <br/> Activity</th>
+              <th>Total Hours <br/> of Activity</th>
+              <th>
+                  My Supervisor's Recommendation
+                  <br/>
+                  This Activity Based On:
+                  <br/>
+                  (Check Appropriate Column(s))
+              </th>
+              <th align="center">This Activity was part <br/>of my development<br/> plan for the year?</th>
+          </tr>
+          </thead>
+          <tbody class="dynamic" id="pda-details">
+          <tr>
+              <td>
+                  <textarea class="dyn-input" id="description[1]" name="description[1]" ></textarea>
+              </td>
+              <td>
+                  <input class="dyn-input" type="text" id="activity_date[1]" name="activity_date[1]" />
+              </td>
+              <td>
+                  <input class="dyn-input" type="text" id="total_hours[1]" name="total_hours[1]" />
+              </td>
+              <td>
+                  <label for="annual_eval[1]">
+                      <input type="checkbox" id="annual_eval[1]" name="annual_eval[1]" class="dyn-input" />
+                      &nbsp;
+                      Annual Evaluation
+                  </label>
+
+                  <label for="prog_rev[1]">
+                      <input type="checkbox" id="prog_rev[1]" name="prog_rev[1]" class="dyn-input" />
+                      &nbsp;
+                      Program Review
+                  </label>
+              </td>
+              <td>
+                  <label for="dev_plan_yes[1]">
+                      <input type="radio" id="dev_plan_yes[1]" class="dyn-input" name="dev_plan[1]" value="yes" />
+                      &nbsp; Yes
+                  </label>
+                  <label for="dev_plan_no[1]">
+                      <input type="radio" id="dev_plan_no[1]" class="dyn-input" name="dev_plan[1]" value="no" />
+                      &nbsp; No
+                  </label>
+              </td>
+          </tr>
+          </tbody>
+      </table>
+
+      <input type="hidden" name="input[data][items_rc]" id="items_rc" data-table="items" />
+
+      <button class="add-row button tiny secondary" data-table="pda-details" id="items-add">
+         Add Row
+      </button>
+    </form>  
+  </div>
+</div>

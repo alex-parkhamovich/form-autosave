@@ -1,0 +1,24 @@
+<%= form_for @card do |f| %>
+  
+  <div class="field">
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+  </div>
+  <div class="field">
+  <%= f.label :desc %>:
+  <%= f.text_area :desc %><br />
+  </div>
+  <div class="field">
+    <%= f.label :hours %>:
+    <%= f.number_field :hours %><br />
+  </div>
+  <div class="field">
+    <%= f.label :recomendations %>:
+    <%= f.text_area :recomendations %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
+

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <h1 class="page-header">Cards</h1>
+    <% @cards.each do |card| %>
+    <h2><a href="#"><%= link_to card.title, card %></a></h2>
+    <span class="glyphicon glyphicon-time"></span>
+    <p class="date"><%= card.created_at.strftime("%B, %d, %Y") %></p>
+    <hr>
+    <% end %>
+    <%= link_to 'New Card', new_card_path %>
+  </div>
+</div>
