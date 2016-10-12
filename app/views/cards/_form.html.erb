@@ -1,24 +1,8 @@
-<%= form_for @card do |f| %>
-  
-  <div class="field">
-  <%= f.label :title %>:
-  <%= f.text_field :title %><br />
-  </div>
-  <div class="field">
-  <%= f.label :desc %>:
-  <%= f.text_area :desc %><br />
-  </div>
-  <div class="field">
-    <%= f.label :hours %>:
-    <%= f.number_field :hours %><br />
-  </div>
-  <div class="field">
-    <%= f.label :recomendations %>:
-    <%= f.text_area :recomendations %><br />
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
+<%= simple_form_for @card do |f| %>
+  <%= f.input :title, wrapper_html: { class: 'username' } %>
+  <%= f.input :desc, wrapper_html: { id: 'password' } %>
+  <%= f.input :hours, wrapper_html: { class: 'options' } %>
+  <%= f.input :recomendations, wrapper_html: { class: 'options' } %>
+  <%= f.button :submit %>
+  <button class="btn" name="button" type="reset">Reset data</button>
 <% end %>
-
